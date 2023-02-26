@@ -51,7 +51,7 @@ public class Results {
 
             return new Results(allPlayerResult.size(), allPlayerResult);
         }
-        return new Results(1, List.of(getSinglePlayerResult(playersName, lastPositions, targetPlayer)));
+        return new Results(SINGLE_SIZE, List.of(getSinglePlayerResult(playersName, lastPositions, targetPlayer)));
     }
 
     private String getSinglePlayerResult(List<String> playersName, List<Integer> lastPositions, String targetPlayer) {
