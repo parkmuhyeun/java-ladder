@@ -46,7 +46,7 @@ public class Results {
     }
 
     public Results getFinalResults(List<String> playersName, List<Integer> lastPositions, String targetPlayer) {
-        if (targetPlayer.equals(ALL_PLAYER)) {
+        if (ALL_PLAYER.equals(targetPlayer)) {
             List<String> allPlayerResult = getAllPlayerResult(lastPositions);
 
             return new Results(allPlayerResult.size(), allPlayerResult);
