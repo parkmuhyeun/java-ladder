@@ -20,4 +20,15 @@ class ResultTest {
         assertThat(result1).isEqualTo(result2);
     }
 
+    @Test
+    @DisplayName("equals 재정의 되었는지 확인")
+    void checkHashCode() {
+        HashSet<Result> set = new HashSet<>();
+
+        set.add(new Result("꽝"));
+        set.add(new Result("꽝"));
+
+        assertThat(set.size()).isEqualTo(1);
+    }
+
 }
